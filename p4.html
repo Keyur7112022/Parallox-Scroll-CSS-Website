@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link  rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <a href="#" class="logo">logo
+        </a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            </ul>
+        </header>
+        <section class="parallax">
+           <!-- <h2 id="text">Traveler Tracking </h2> -->
+            <img src="./image/monutain_01.png" id="m1">
+            <img src="./image/trees_02.png" id="t2">
+            <img src="./image/monutain_02.png" id="m2">
+            <img src="./image/trees_01.png" id="t1">
+            <img src="./image/man.png" id="man">
+            <img src="./image/plants.png" id="plants">
+            </section>
+            <section class="sec">
+                <h2>Traveler Tracking</h2>
+                <p>✵ The journey of a thousand miles begins with a single step.</p>
+                </section>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+                <script>
+                    gsap.from("#m1",{
+                        scrollTrigger:{
+                            scrub:true
+                        },
+                        y:200
+                    })
+                    gsap.from("#m2",{
+                        scrollTrigger:{
+                            scrub:true
+                        },
+                        y:50
+                    })
+                    gsap.from("#t2",{
+                        scrollTrigger:{
+                            scrub:true
+                        },
+                        x:-50
+                    })
+                    gsap.from("#t1",{
+                        scrollTrigger:{
+                            scrub:true
+                        },
+                        x:50
+                    })
+                    gsap.from("#man",{
+                        scrollTrigger:{
+                            scrub:true
+                        },
+                        x:-250
+                    })
+                    gsap.from("#plants",{
+                        scrollTrigger:{
+                            scrub:true
+                        },
+                        x:-50
+                    })
+                    // gsap.from("#text",{
+                    //     scrollTrigger:{
+                    //         scrub:true
+                    //     },
+                    //     x:500
+                    // })
+
+                   
+                    </script>
+            </body>
+</html>
